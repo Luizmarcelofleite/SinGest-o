@@ -17,3 +17,7 @@ Route::post('/register', [RegisterController::class, 'save'])->name('register.sa
 
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
